@@ -1,0 +1,243 @@
+{
+  "id": "3508d793-797c-4377-9e42-13f6f32ca7da",
+  "version": "2.0",
+  "name": "robobar",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "82bbcafa-e44e-4b50-9a8c-8427b491629c",
+    "name": "robobar",
+    "commands": [{
+      "id": "f24ee65f-529f-4c69-87ba-938870283449",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e138a70-46a2-4056-9d40-9efd20911259",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "843x777",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63616147-208b-45b7-8e11-74fb5782de2b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/button",
+      "targets": [
+        ["css=.ng-scope:nth-child(1) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "acc53d30-c7de-4374-beab-e261e21f58f0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//tr[2]/td[3]/div/div/div[2]/button",
+      "targets": [
+        ["css=.ng-scope:nth-child(2) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "697b3c44-10a5-42ce-831b-f4a455848037",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(3) .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(3) .input-group-append > .btn", "css:finder"],
+        ["xpath=//tr[3]/td[3]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4bffb31-1842-4e33-893d-2624e7fd28e6",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//tr[4]/th[2]",
+      "targets": [
+        ["css=tr:nth-child(4) > .ng-binding", "css:finder"],
+        ["xpath=//tr[4]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'€6.25')]", "xpath:innerText"]
+      ],
+      "value": "total"
+    }, {
+      "id": "1ee74dec-fb1e-4bba-b794-656c6acc87e0",
+      "comment": "",
+      "command": "assert",
+      "target": "total",
+      "targets": [],
+      "value": "€6.25"
+    }]
+  }, {
+    "id": "6a4f2b05-e546-4338-a3e4-bf2d8e9cbb49",
+    "name": "test-total",
+    "commands": [{
+      "id": "9b231ce8-1114-46c3-bb14-254339e48fe6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a847207-aed2-49b3-9cc4-c826b866bf35",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "867x686",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e92057d6-c96c-42e5-902a-333254933c26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(1) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(1) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a4808ba-57b8-40a0-9bcb-3db0613eb202",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(2) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(2) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f6d8d30-69bd-4c36-91a6-4fae7b639dc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(3) .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(3) .input-group-append > .btn", "css:finder"],
+        ["xpath=//tr[3]/td[3]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8972c7a5-74e0-411a-a35f-6b412a266e00",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4b0ea13-edc1-4fd6-844a-d74624e98236",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.ng-scope:nth-child(1) > .ng-binding:nth-child(2)",
+      "targets": [
+        ["css=.ng-scope:nth-child(1) > .ng-binding:nth-child(2)", "css:finder"],
+        ["xpath=//td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": "cantRobacola"
+    }, {
+      "id": "1331a0f5-7eba-4130-94b2-2f3a6351a12d",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.ng-scope:nth-child(1) > .ng-binding:nth-child(4)",
+      "targets": [
+        ["css=.ng-scope:nth-child(1) > .ng-binding:nth-child(4)", "css:finder"],
+        ["xpath=//td[4]", "xpath:position"]
+      ],
+      "value": "totalRobacola"
+    }, {
+      "id": "4f25900a-1961-4b5d-94a0-87be088e93a2",
+      "comment": "",
+      "command": "assert",
+      "target": "cantRobacola",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "24a3698e-dde5-45ef-81b8-58b019907182",
+      "comment": "",
+      "command": "assert",
+      "target": "totalRobacola",
+      "targets": [],
+      "value": "€1.25"
+    }, {
+      "id": "c126a18b-ecbd-4846-842d-0c4d765d3355",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.ng-scope:nth-child(2) > .ng-binding:nth-child(2)",
+      "targets": [],
+      "value": "cantRobobeer"
+    }, {
+      "id": "fca1789f-fa92-4f7e-aa0b-25f3eca5af3e",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.ng-scope:nth-child(2) > .ng-binding:nth-child(4)",
+      "targets": [],
+      "value": "totalRoboBeer"
+    }, {
+      "id": "41d466a0-ae0e-4219-b2dc-5b82c7f9bd42",
+      "comment": "",
+      "command": "assert",
+      "target": "cantRobobeer",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "5b5bb926-8e47-4ab3-a895-89787ac49ec2",
+      "comment": "",
+      "command": "assert",
+      "target": "totalRoboBeer",
+      "targets": [],
+      "value": "€2.00"
+    }, {
+      "id": "0a14e1e8-1fb6-4124-8822-dfa53ba7f898",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.ng-scope:nth-child(3) > .ng-binding:nth-child(2)",
+      "targets": [],
+      "value": "cantWine"
+    }, {
+      "id": "4b919add-36dd-4af3-8f5e-beb41acc6442",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.ng-scope:nth-child(3) > .ng-binding:nth-child(4)",
+      "targets": [],
+      "value": "totalWine"
+    }, {
+      "id": "d30e534c-60a4-4cd3-a18c-67b820a29b48",
+      "comment": "",
+      "command": "assert",
+      "target": "cantWine",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "9c765d35-97c5-4792-9574-4c10d0d823ac",
+      "comment": "",
+      "command": "assert",
+      "target": "totalWine",
+      "targets": [],
+      "value": "€3.00"
+    }]
+  }],
+  "suites": [{
+    "id": "d7309f50-b6b4-49a2-9b1f-b82dbbd92caf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["82bbcafa-e44e-4b50-9a8c-8427b491629c"]
+  }, {
+    "id": "f2e154c0-d16b-4b35-8fca-9f684a2d8523",
+    "name": "Test-edad",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
